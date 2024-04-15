@@ -1,8 +1,7 @@
-// User.js
 const mongoose = require('mongoose');
 
 const userSchema = new mongoose.Schema({
-  email: {
+  user_uid: {
     type: String,
     required: true,
     unique: true,
@@ -11,10 +10,19 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  wishlist: [
+  email: {
+    type: String,
+    required: true,
+    unique: true,
+  },
+  wishlist_uid: {
+    type: String,
+    required: true,
+  },
+  friendslist: [
     {
       type: mongoose.Schema.Types.ObjectId,
-      ref: 'Item',
+      ref: 'User',
     },
   ],
 });

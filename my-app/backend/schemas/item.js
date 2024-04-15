@@ -1,12 +1,15 @@
-// Item.js
 const mongoose = require('mongoose');
 
 const itemSchema = new mongoose.Schema({
+  item_uid: {
+    type: String,
+    required: true,
+    unique: true,
+  },
   name: {
     type: String,
     required: true,
   },
-  // Add more fields as per your requirements (e.g., price, description, etc.)
 });
 
 const Item = mongoose.model('Item', itemSchema);
