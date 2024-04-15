@@ -6,9 +6,10 @@ const authRouter = require('auth');
 const wishlistRouter = require('./wishlist');
 
 const app = express();
+require('dotenv').config(); // Load environment variables from .env file
 
 // Connect to MongoDB
-mongoose.connect('mongodb://localhost/your-database-name', {
+mongoose.connect(process.env.DATABASE_URL, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
