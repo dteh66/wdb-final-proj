@@ -6,10 +6,10 @@ const express = require('express');
 const bcrypt = require('bcryptjs');
 const User = require('schemas/user');
 
-const router = express.Router();
+const authRouter = express.Router();
 
 // Register a new user
-router.post('/register', async (req, res) => {
+authRouter.post('/register', async (req, res) => {
   const { email, name, password } = req.body;
 
   try {
@@ -34,7 +34,7 @@ router.post('/register', async (req, res) => {
 });
 
 // User login
-router.post('/login', async (req, res) => {
+authRouter.post('/login', async (req, res) => {
   const { email, password } = req.body;
 
   try {
@@ -61,7 +61,7 @@ router.post('/login', async (req, res) => {
 });
 
 // User logout
-router.post('/logout', (req, res) => {
+authRouter.post('/logout', (req, res) => {
   // Clear the user session
   req.session.destroy((err) => {
     if (err) {
