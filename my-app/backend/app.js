@@ -3,7 +3,7 @@ const express = require('express');
 const session = require('express-session');
 const mongoose = require('mongoose');
 const authRouter = require('auth');
-const wishlistRouter = require('./wishlist');
+const wishlistRouter = require('../src/backend/wishlist');
 
 const app = express();
 require('dotenv').config(); // Load environment variables from .env file
