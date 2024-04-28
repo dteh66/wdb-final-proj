@@ -1,0 +1,167 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 20px 80px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.logo span {
+    font-size: 24px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.search-bar input {
+    width: 524px;
+    height: 38px;
+    padding: 8px 16px;
+    border: 1px solid #D1D5DB;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.user-actions {
+    display: flex;
+    align-items: center;
+}
+
+.user-actions a {
+    margin-left: 24px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.signup-button {
+    margin-left: 24px;
+    padding: 8px 16px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.cart-icon {
+    font-size: 24px;
+    margin-left: 24px;
+}
+
+main {
+    padding: 0;
+}
+
+.hero-text {
+    background-color: #D47A7A;
+    ;
+    padding: 18px 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 400;
+    color: #ffffff;
+    margin: 0;
+}
+
+.popular-items-section {
+    margin: 64px 80px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 32px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #E5E7EB;
+    text-align: center;
+}
+
+.popular-items {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.item {
+    width: 278px;
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+}
+
+.item-details {
+    padding: 16px;
+}
+
+.item-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.price {
+    font-size: 24px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.price sup {
+    font-size: 14px;
+    vertical-align: super;
+}
+
+.add-button {
+    width: 100%;
+    height: 40px;
+    background-color: #F35E5E;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.like-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #F35E5E;
+    font-size: 24px;
+}

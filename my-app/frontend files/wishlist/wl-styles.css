@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+body {
+    background-color: #FFDEDE;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+  }
+
+.rectangle {
+    width: 80%; /* Adjust width as needed */
+    max-width: 600px; /* Limit the maximum width */
+    height: 95vh; /* Adjust height as needed */
+    background-color: white; 
+    border-radius: 20px; 
+    margin: auto; 
+    padding: 20px;
+  }
+
+.header-rec {
+    display: flex;
+    width: 85%; 
+    max-width: 560px; 
+    height: 7vh;
+    background-color: #E3DFDF;
+    border-radius: 12px;
+    margin: 35px auto;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    letter-spacing: 16px;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+}
+
+h2{
+    font-family: 'Inter', sans-serif;
+    margin: 0px;
+    padding-left: 50px;
+    font-size: 20px;
+}
+
+.items{
+    font-family: 'Inter', sans-serif;
+    margin: 20px;
+    padding-left: 50px;
+}
+
+.items ul{
+    font-size: 14px;
+    font-style: bold;
+    list-style-type: disc;
+}
+
+.items img{
+    max-width: 30px;
+    max-height: 60px;
+    left: 10px;
+}
+
+li {
+    position: relative; /* Set position to relative */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Align items vertically */
+    margin-bottom: 20px; /* Add spacing between list items */
+  }
+
+li::after {
+    content: ''; 
+    position: absolute; /* Set position to absolute */
+    right: 25px; /* Position at left of list item */
+    bottom: 0;
+    width: 25px; /* Adjust width as needed */
+    height: 25px; /* Adjust height as needed */
+    background-color: rgba(51, 51, 51, 0); 
+    border-radius: 10px; 
+    border: 2px solid #CAC8C8;
+  }
